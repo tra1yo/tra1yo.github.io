@@ -1,61 +1,149 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>handypainterest</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HandyPainterestLA | Limewash & Custom Walls</title>
 
-        header {
-            background-color: black;
-            color: white;
-            padding: 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-        section {
-            padding: 40px;
-        }
+<style>
+body{
+margin:0;
+font-family:'Inter', sans-serif;
+background:#f4f1eb;
+color:#1e1e1e;
+line-height:1.6;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 15px 25px;
-            background-color: green;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
 
-        .btn:hover {
-            background-color: darkgreen;
-        }
-    </style>
+h1,h2{
+font-family:'Playfair Display', serif;
+font-weight:500;
+letter-spacing:0.5px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#eae6df;
+}
+
+.hero h1{
+font-size:48px;
+max-width:800px;
+}
+
+.hero p{
+color:#6a665f;
+font-size:18px;
+margin-top:20px;
+}
+
+.button{
+margin-top:35px;
+padding:14px 32px;
+background:#2c2a28;
+color:white;
+text-decoration:none;
+letter-spacing:1px;
+font-size:14px;
+transition:0.3s;
+}
+
+.button:hover{
+background:#44413d;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:60px;
+text-align:center;
+}
+
+.services h3{
+font-family:'Playfair Display', serif;
+font-size:22px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery div{
+background:#ddd;
+height:350px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+padding:40px;
+text-align:center;
+font-size:14px;
+color:#6a665f;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>handypainterest</h1>
-    <p>Reliable Home Services in Los Angeles</p>
-</header>
-
-<section>
-    <h2>Our Services</h2>
-    <p>• Plumbing</p>
-    <p>• Electrical</p>
-    <p>• Painting</p>
-    <p>• Furniture Assembly</p>
+<section class="hero">
+<h1>Artisan Limewash & Custom Painting in Los Angeles</h1>
+<p>Elevated wall finishes. Clean craftsmanship. Timeless interiors.</p>
+<a href="tel:+1XXXXXXXXXX" class="button">Request a Free Estimate</a>
 </section>
 
 <section>
-    <h2>Contact</h2>
-    <a class="btn" href="https://wa.me/16464075693">Message on WhatsApp</a>
+<h2>Our Services</h2>
+<div class="services">
+<div>
+<h3>Limewash Walls</h3>
+<p>Soft texture. Natural depth. Luxury finish.</p>
+</div>
+<div>
+<h3>Interior Painting</h3>
+<p>Clean lines. Flawless coverage. Modern feel.</p>
+</div>
+<div>
+<h3>Accent Walls</h3>
+<p>Statement surfaces designed to stand out.</p>
+</div>
+</div>
 </section>
+
+<section>
+<h2>Selected Work</h2>
+<div class="gallery">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</section>
+
+<section class="contact">
+<h2>Let’s Transform Your Space</h2>
+<p>Serving Los Angeles & surrounding areas</p>
+<a href="tel:+1XXXXXXXXXX" class="button">Call Now</a>
+</section>
+
+<footer>
+© 2026 HandyPainterestLA. All Rights Reserved.
+</footer>
 
 </body>
 </html>
