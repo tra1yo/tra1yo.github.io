@@ -27,7 +27,40 @@ font-family:'Playfair Display', serif;
 font-weight:500;
 letter-spacing:0.5px;
 }
+   
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#f4f1eb;
+  z-index:1000;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
 
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:'Playfair Display', serif;
+  font-size:18px;
+}
+
+.nav-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.button.small{
+  padding:10px 20px;
+  font-size:13px;
+}
+   
 .hero{
 height:90vh;
 display:flex;
@@ -35,14 +68,15 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-
+margin-top:80px;
+   
 background:#eae6df;
 }
 
 .section-title {
    font-family: 'Playfair Display', serif;
    text-align: center;
-   font-weight: 700;
+   font-weight: 800;
    margin-bottom: 60px;
 }
 
@@ -79,6 +113,19 @@ box-shadow:0 8px 20px rgba(0,0,0,0.15);
 background:#3a3734;
 }
 
+.call-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.call-button:hover {
+  background-color: #333;
+}   
 
 .services{
 display:grid;
@@ -118,6 +165,27 @@ color:#6a665f;
 
 <body>
 
+
+<header class="header">
+  <div class="nav">
+    <div class="logo">handypainterest</div>
+
+    <div class="nav-buttons">
+      <a href="tel:+16464075693" class="call-button">
+        📞 (646) 407-5693
+      </a>
+
+      <a href="https://wa.me/16464075693?text=Hi%20I%20would%20like%20a%20quote"
+         target="_blank"
+         class="button small">
+        Get Estimate
+      </a>
+    </div>
+  </div>
+</header>
+
+
+   
 <section class="hero">
 <h1>handypainterest</h1>
 <p>Let's turn your ideas into reality.</p>
@@ -129,7 +197,7 @@ color:#6a665f;
 <path d="M20.52 3.48A11.89 11.89 0 0012.04 0C5.4 0 .02 5.38.02 12.02c0 2.12.55 4.18 1.6 6l-1.7 6.2 6.35-1.66a11.93 11.93 0 005.77 1.47h.01c6.63 0 12.01-5.38 12.01-12.01a11.9 11.9 0 00-3.54-8.54zM12.05 21.8a9.78 9.78 0 01-4.98-1.36l-.36-.21-3.77.98 1-3.67-.24-.38a9.76 9.76 0 01-1.49-5.17C2.21 6.48 6.5 2.2 12.04 2.2a9.8 9.8 0 019.82 9.82c0 5.54-4.28 9.78-9.81 9.78zm5.38-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.14-.14.3-.34.45-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.2-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.1 4.5.7.3 1.25.48 1.67.62.7.22 1.34.19 1.84.11.56-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.11-.27-.17-.57-.32z"/>
 </svg>
 
-Request a Free Estimate
+Request a Free Fast Estimate
 </a>
 
 </section>
